@@ -17,3 +17,22 @@ body, html {
 div {
   position:absolute;
 }
+
+.main {
+  margin-top: 60px;
+}
+
+.longer-scroll {
+  height: 5000px;
+  background-color: #ffffff;
+  margin-top: 120vh;
+  z-index: 100;
+  width: 100%;
+}
+
+.gradient-div {
+  height: 100px; /* Adjust height as needed */
+  background: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0)); /* White gradient from opaque to transparent */
+  position: relative;
+  margin-top: -100px;
+}

@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
     <title>Document</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="scss/style.css">
+    <!-- <link rel="stylesheet" href="dist/style.css"> -->
+    <link rel="stylesheet" href="scss/parallax.css">
     <link rel="stylesheet" href="scss/main.css">
     <link rel="stylesheet" href="scss/mixins.css">
     <link rel="stylesheet" href="scss/variables.css">
     <link rel="stylesheet" href="scss/menu.css">
+    <link rel="stylesheet" href="scss/mauntaintopparallax.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
@@ -18,50 +19,62 @@
 
     <script src="mountaintopparallax.js" defer></script>
     <script src="menu.js" defer></script>
+    <script src="toggle.js" defer></script>
 </head>
 <body>
 
-  <div class="test-1">
-    <header class="header">
-      <div class="header__content">
-          <a href="index.html" class="logo">
-              <svg viewBox="0 0 85 72" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M34.6069 69.1858L0.989258 37.6912L34.6069 6.19653L5.22386 37.6912L34.6069 69.1858Z"/>
-                  <path d="M74.9305 37.5994L43.4296 71.3633L11.9412 37.5994L43.4296 64.7431L74.9305 37.5994Z"/>
-                  <path d="M84.1421 37.6428L50.7165 69.1851L80.2732 37.7865L46.0897 6.80209L43.4238 48.4598C43.4238 48.4598 43.4811 7.33438 43.4503 0.958252L84.1421 37.6428Z"/>
-                  </svg>                    
-          </a>
-          <nav class="nav">
-              <ul class="nav__list">
-                  <li class="nav__item">
-                      <a href="index.html" class="nav__link">&nbsp;HOME&nbsp;</a>
-                  </li>
-                  <li class="nav__item">
-                      <a href="about.html" class="nav__link">&nbsp;ABOUT👷‍♀️&nbsp;</a>
-                  </li>
-                  <li class="nav__item">
-                      <a href="portfolio.html" class="nav__link">&nbsp;PORTFOLIO👷‍♀️&nbsp;</a>
-                  </li>
-                  <li class="nav__item">
-                      <a href="connect.html" class="nav__link">&nbsp;CONNECT👷‍♀️&nbsp;</a>
-                  </li>
-                  <li class="nav__item">
-                      <a href="shop.html" class="nav__link">&nbsp;BLOG👷‍♀️&nbsp;</a>
-                  </li>
-                  <li class="nav__item">
-                      <a href="shop.html" class="nav__link">&nbsp;SHOP👷‍♀️&nbsp;</a>
-                  </li>
-              </ul>
-          </nav>
-          <div class="hamburger">
-              <div class="bar"></div>
-              <div class="bar"></div>
-              <div class="bar"></div>
-          </div>
-       </div>
-  </header>
+  <!-- header menu bar with toggle effect starts here -->
+  <header class="header" id="toggleDiv">
 
-  </div>
+    <div class="header__content">
+
+      <div id="toggleIcon">
+        <svg width="40" height="22" viewBox="0 0 40 22" fill="#0AFA94" xmlns="http://www.w3.org/2000/svg">
+          <path d="M40 0L19.9961 22L0 0L19.9961 17.6864L40 0Z" fill="#0AFA94"/>
+          </svg>             
+      </div>
+
+        <a href="index.html" class="logo">
+            <svg viewBox="0 0 85 72" xmlns="http://www.w3.org/2000/svg">
+                <path d="M34.6069 69.1858L0.989258 37.6912L34.6069 6.19653L5.22386 37.6912L34.6069 69.1858Z"/>
+                <path d="M74.9305 37.5994L43.4296 71.3633L11.9412 37.5994L43.4296 64.7431L74.9305 37.5994Z"/>
+                <path d="M84.1421 37.6428L50.7165 69.1851L80.2732 37.7865L46.0897 6.80209L43.4238 48.4598C43.4238 48.4598 43.4811 7.33438 43.4503 0.958252L84.1421 37.6428Z"/>
+            </svg>                    
+        </a>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">&nbsp;home&nbsp;</a>
+                </li>
+                <li class="nav__item">
+                    <a href="about.html" class="nav__link">&nbsp;about&nbsp;</a>
+                </li>
+                <li class="nav__item">
+                    <a href="portfolio.html" class="nav__link">&nbsp;work&nbsp;</a>
+                </li>
+                <li class="nav__item">
+                    <a href="connect.html" class="nav__link">&nbsp;chat&nbsp;</a>
+                </li>
+                <li class="nav__item">
+                    <a href="shop.html" class="nav__link">&nbsp;blog&nbsp;</a>
+                </li>
+                <li class="nav__item">
+                    <a href="shop.html" class="nav__link">&nbsp;shop&nbsp;</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+</header>
+
+  <!-- header menu bar with toggle effect ends here -->
+
+  <!-- header parallax starts here -->
 
 <div class="scrollDist"></div>
 <div class="main">
@@ -73,7 +86,7 @@
       </g>
     </mask>
     
-    <image class="sky" xlink:href="https://raw.githubusercontent.com/vdeksne/portfolio2024_images/0d95cad7910298dc85acc519d594185a886ef47c/sky.svg"  width="1200" height="590" />
+    <image class="sky" xlink:href="https://raw.githubusercontent.com/vdeksne/portfolio2024_images/65e4d45c38beac899595638aaab34dd71bee6f21/sky.svg"  width="1200" height="590" />
     <image class="mountBg" xlink:href="https://raw.githubusercontent.com/vdeksne/portfolio2024_images/main/parallax/bg.png" width="1200" height="800"/>    
     <image class="mountMg" xlink:href="https://raw.githubusercontent.com/vdeksne/portfolio2024_images/main/parallax/mg.png" width="1200" height="800"/>    
     <image class="cloud2" xlink:href="https://assets.codepen.io/721952/cloud2.png" width="1200" height="800"/>    
@@ -81,20 +94,26 @@
     <image class="cloud1" xlink:href="https://assets.codepen.io/721952/cloud1.png" width="1200" height="800"/>
     <image class="cloud3" xlink:href="https://assets.codepen.io/721952/cloud3.png" width="1200" height="800"/>
 
-    <text fill="#fff" x="50%" y="200" text-anchor="middle">DEVELOPER</text>
+    <text id="test1" fill="#fff" x="50%" y="200" text-anchor="middle">DEVELOPER</text>
 
     
     <polyline class="arrow" fill="#fff" points="599,250 599,289 590,279 590,282 600,292 610,282 610,279 601,289 601,250" />
     
     <g mask="url(#m)">
       <rect fill="#fff" width="100%" height="100%" />      
-      <text x="50%" y="200" text-anchor="middle" fill="#11202A">DESIGNER👩‍💻</text>
+      <text id="test2" x="50%" y="200" text-anchor="middle" fill="#11202A">DESIGNER👩‍💻</text>
     </g>
     
     <rect id="arrowBtn" width="100" height="100" opacity="0" x="550" y="220" style="cursor:pointer"/>
   </svg>
 </div>
 
+  <!-- header parallax ends here -->
+
+  <div class="longer-scroll">
+    <div class="gradient-div"></div>
+    <p>test</p>
+  </div>
 
     
 </body>
