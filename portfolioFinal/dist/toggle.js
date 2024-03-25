@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
     var toggleIcon = document.getElementById("toggleIcon");
     toggleIcon.style.display = "none"; // Initially hide toggleIcon
 
-    toggleIcon.addEventListener("click", function() {
+    // Function to handle the toggle action
+    function toggleAction() {
         var toggleDiv = document.getElementById("toggleDiv");
         var headerContent = document.querySelector(".header__content");
         var logo = document.querySelector(".logo");
@@ -14,8 +15,15 @@ document.addEventListener("DOMContentLoaded", function() {
         nav.style.display = "initial";
         nav.style.justifyContent = "space-evenly";
         toggleIcon.style.display = "none";
-    });
+    }
+
+    // Event listener for click
+    toggleIcon.addEventListener("click" , toggleAction);
+
+    // Event listener for mouseover
+    toggleIcon.addEventListener("mouseover", toggleAction);
 });
+
 
 window.addEventListener("scroll", function() {
     var toggleDiv = document.getElementById("toggleDiv");

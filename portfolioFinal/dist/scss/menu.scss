@@ -6,6 +6,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    // transition: all 0.3s ease-in-out;
 }
 
 ul {
@@ -30,8 +31,8 @@ body {
     width: 100%;
     top: 0; 
     z-index: 1000;
-
     transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
 }
 
 .header__content {
@@ -124,16 +125,17 @@ body {
 // Top-bar fixed toggle 
 
 #toggleDiv {
-    transition: all 0.3s ease-in-out;
+    transition: all 0.7s ease-in-out;
   }
 
 .header {
-    transition: all 0.3s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
 
 #toggleIcon {
     margin-bottom: 0.2rem;
     display: none;
+    transition: all 0.7s ease-in-out;
 }
 
 // #toggleIcon svg {
