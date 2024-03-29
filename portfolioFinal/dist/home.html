@@ -24,17 +24,10 @@
 <body>
 
   <!-- header menu bar with toggle effect starts here -->
-  <header class="header" id="toggleDiv">
 
-    <div class="header__content">
+  <header class="topnav wrapper">
 
-      <div id="toggleIcon">
-        <svg width="40" height="22" viewBox="0 0 40 22" fill="#0AFA94" xmlns="http://www.w3.org/2000/svg">
-          <path d="M40 0L19.9961 22L0 0L19.9961 17.6864L40 0Z" fill="#0AFA94"/>
-          </svg>             
-      </div>
-
-        <a href="index.html" class="logo">
+        <a href="index.html" class="toplogo">
             <svg viewBox="0 0 85 72" xmlns="http://www.w3.org/2000/svg">
                 <path d="M34.6069 69.1858L0.989258 37.6912L34.6069 6.19653L5.22386 37.6912L34.6069 69.1858Z"/>
                 <path d="M74.9305 37.5994L43.4296 71.3633L11.9412 37.5994L43.4296 64.7431L74.9305 37.5994Z"/>
@@ -42,32 +35,41 @@
             </svg>                    
         </a>
 
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="index.html" class="nav__link">&nbsp;home&nbsp;</a>
+        <nav>
+          <button class="topbav__open" style="position: absolute;
+          top: 0.2rem; right: 0.2rem;">
+            <img src="images/open.svg" alt="" width="76" height="16">
+          </button>
+
+          <div class="topnav_menu" style="width: 100%">
+            <button class="topnav__close">
+              <img class="buttonx"  src="images/close.svg" width="45" height="23" alt="">
+            </button>
+            
+              <ul class="topnav__links">
+                <li class="topnav__item">
+                    <a href="index.html" class="topnav__link">&nbsp;home&nbsp;</a>
                 </li>
-                <li class="nav__item">
-                    <a href="about.html" class="nav__link">&nbsp;about&nbsp;</a>
+                <li class="topnav__item">
+                    <a href="about.html" class="topnav__link">&nbsp;about&nbsp;</a>
                 </li>
-                <li class="nav__item">
-                    <a href="portfolio.html" class="nav__link">&nbsp;work&nbsp;</a>
+                <li class="topnav__item">
+                    <a href="portfolio.html" class="topnav__link">&nbsp;work&nbsp;</a>
                 </li>
-                <li class="nav__item">
-                    <a href="connect.html" class="nav__link">&nbsp;chat&nbsp;</a>
+                <li class="topnav__item">
+                    <a href="connect.html" class="topnav__link">&nbsp;chat&nbsp;</a>
                 </li>
-                <li class="nav__item">
-                    <a href="shop.html" class="nav__link">&nbsp;blog&nbsp;</a>
+                <li class="topnav__item">
+                    <a href="shop.html" class="topnav__link">&nbsp;blog&nbsp;</a>
                 </li>
-                <li class="nav__item">
-                    <a href="shop.html" class="nav__link">&nbsp;shop&nbsp;</a>
+                <li class="topnav__item">
+                    <a href="shop.html" class="topnav__link">&nbsp;shop&nbsp;</a>
                 </li>
             </ul>
+
+          </div>
         </nav>
-        <!-- <div class="hamburger">
-            <div class="bar"></div>
-        </div> -->
-    </div>
+
 </header>
 
   <!-- header menu bar with toggle effect ends here -->
