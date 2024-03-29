@@ -55,7 +55,6 @@ body {
 }
 
 /* .nav__item {
-
 } */
 
 .nav__link {
@@ -78,15 +77,17 @@ body {
     font-weight: 400;
 }
 
-.hamburger {
-    display: none; 
-    cursor: pointer; 
-}
+// .hamburger {
+//     display: none; 
+//     cursor: pointer; 
+//     display: flex;
+//     justify-content: center;
+// }
 
 .bar {
-    height: 2px;
+    min-height: 60px;
     width: 27px; 
-    background: $secondary-color;
+    background: red;
     margin: 5px 0;
     opacity: 0.8; 
     transition: all 0.3s ease-in-out;
@@ -170,29 +171,29 @@ align-items: flex-end !important;
     }
 }
 
-@media (max-width: 1920px) {
-    .nav {
-        position: fixed; 
-        top: 66px; 
-        left: 0;
-        background-color: $primary-color;
-        width: 100%;
-        padding: 10px 0 25px; 
-        transform: translateX(-100%) 
-        /* this is where the nav bar disappears by removing and applying transfor:translateX so we add JS */
-    }
+// @media (max-width: 1920px) {
+//     .nav {
+//         position: fixed; 
+//         top: 66px; 
+//         left: 0;
+//         background-color: $primary-color;
+//         width: 100%;
+//         padding: 10px 0 25px; 
+//         transform: translateX(-100%) 
+//         /* this is where the nav bar disappears by removing and applying transfor:translateX so we add JS */
+//     }
 
-    .nav__list {
-        flex-direction: column;
-        align-items: center;
-        row-gap: 20px;
-    }
+//     .nav__list {
+//         flex-direction: column;
+//         align-items: center;
+//         row-gap: 20px;
+//     }
 
-    .nav_link {
-        font-size: 40px;
-    }
+//     .nav_link {
+//         font-size: 40px;
+//     }
 
-    .hamburger {
-        display: block;
-    }
-}
+//     .hamburger {
+//         display: block;
+//     }
+// }
