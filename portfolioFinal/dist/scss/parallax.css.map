@@ -1,1 +1,1 @@
-{"version":3,"sources":["parallax.scss","parallax.css"],"names":[],"mappings":"AAAQ,4GAAA;AAER;EACI,iCAAA;ACAJ;;ADGA;EACE,eAAA;ACAF;;ADGA;EACE,WAAA;EACA,YAAA;EACA,mBAAA;EACA,iCAAA;EACA,gBAAA;EACA,eAAA;EACA,kBAAA;ACAF;;ADGA;EACE,kBAAA;ACAF;;ADGA;EACI,2BAAA;ACAJ","file":"parallax.css"}
+{"version":3,"sources":["parallax.scss","parallax.css"],"names":[],"mappings":"AAAQ,4GAAA;AAER;EACI,iCAAA;ACAJ;;ADGA;EACE,eAAA;ACAF;;ADGA;EACE,WAAA;EACA,YAAA;EACA,mBAAA;EACA,iCAAA;EACA,gBAAA;EACA,eAAA;EACA,kBAAA;ACAF;;ADGA;EACE,kBAAA;ACAF;;ADGA;EACI,4BAAA;ACAJ","file":"parallax.css"}
