@@ -36,13 +36,30 @@
         </a>
 
         <nav>
-          <button class="topbav__open" style="position: absolute;
-          top: 0.2rem; right: 0.2rem;">
+
+          <span id="nav-label" hidden>
+            Navigation
+          </span>
+
+          <button 
+          id="btnOpen"
+          class="topbav__open" 
+          aria-expanded="false" 
+          aria-labelledby="nav-label"
+          style="position: absolute; top: 0.2rem; right: 0.2rem;">
             <img src="images/open.svg" alt="" width="76" height="16">
           </button>
 
-          <div class="topnav_menu" style="width: 100%">
-            <button class="topnav__close">
+          <div 
+          class="topnav_menu" 
+          role="dialog" 
+          aria-labelledby="nav-label"
+          style="width:100%">
+
+            <button 
+            id="btnClose"
+            aria-label="Close"
+            class="topnav__close">
               <img class="buttonx"  src="images/close.svg" width="45" height="23" alt="">
             </button>
             
