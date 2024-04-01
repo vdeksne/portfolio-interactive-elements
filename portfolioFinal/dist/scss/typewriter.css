@@ -10,6 +10,7 @@ h1 {
   color: #010F19;
   text-transform: uppercase;
   margin-top: 1em;
+  font-weight: 700;
 }
 
 span {
@@ -20,5 +21,10 @@ span {
 @keyframes caret {
   50% {
     border-color: transparent;
+  }
+}
+@media (max-width: 900px) {
+  h1 {
+    font-size: 0.4em;
   }
 }/*# sourceMappingURL=typewriter.css.map */
