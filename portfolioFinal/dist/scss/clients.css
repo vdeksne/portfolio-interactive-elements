@@ -1,31 +1,51 @@
-.test-div {
-  width: 100%;
-  height: 200px;
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100vw;
+  height: 5em;
+  visibility: visible; 
   display: flex;
-  justify-content: space-between; /* Distributes items evenly with equal space between them */
-  z-index: 5000000;
-  background-color: red;
-  cursor: url("../cursor.svg") !important;
+  align-items: center;
 }
 
-.test-img {
+/* .test {
+  overflow: hidden;
+  width: 100vw;
   height: 100px;
+  visibility: visible; 
+} */
+
+
+.carousel-track-container {
+  display: flex;
 }
 
-.one {
-  background-color: aqua;
-  width: 50%;
+.carousel-track {
+  display: flex;
+  animation: scroll linear infinite;
+  animation-duration: calc(10s * var(--num-items) / 3); /* Adjust based on the number of items */
 }
 
-.two {
-  background-color: pink;
-  width: 50%;
+.carousel-slide {
+  list-style-type: none;
 }
 
-body {
-  cursor: url("https://raw.githubusercontent.com/vdeksne/portfolio2024_images/main/cursor.png"), auto;
+.carousel-slide img {
+  width: 100px; /* Adjust based on your logo size */
+  padding: 10px;
 }
 
-a {
-  cursor: url("https://raw.githubusercontent.com/vdeksne/portfolio2024_images/main/cursorP.png"), pointer;
-}/*# sourceMappingURL=clients.css.map */
+/* Keyframes for the infinite scrolling effect */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100px * var(--num-items))); /* Ensure this matches the total width of the items you're cycling through */
+  }
+}
