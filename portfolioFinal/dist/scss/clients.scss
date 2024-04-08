@@ -1,45 +1,64 @@
-.test-div {
-    width: 100%;
-    height: 200px;
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .carousel {
+    overflow: hidden;
+    width: 100vw;
+    height: 6vw;
+    visibility: visible; 
     display: flex;
-    justify-content: space-between; /* Distributes items evenly with equal space between them */
-    z-index: 5000000;
-    background-color: red;
-    cursor: url('../cursor.svg') !important;
-}
-
-.test-img {
-    height: 100px; 
-
-
-}
-
-.one {
-    background-color: aqua;
-    width: 50%;
-}
-
-.two {
-    background-color: pink;
-    width: 50%;
-}
-
-
-body {
-    cursor: url('https://raw.githubusercontent.com/vdeksne/portfolio2024_images/main/cursor.png'), auto;
-}
-
-
-// body {
-//     cursor: url('https://raw.githubusercontent.com/vdeksne/portfolio2024_images/main/cursorP.png'), pointer;
-// }
-
-a {
-    cursor: url('https://raw.githubusercontent.com/vdeksne/portfolio2024_images/main/cursorP.png'), pointer;
-}
-
-
-
-// .selector {
-//     cursor: url('custom-cursor.png'), pointer;
-// }
+    align-items: center;
+    justify-content: center;
+    /* margin-top: -0.5em; */
+  }
+  
+  @media (max-width: 430px) {
+    .carousel {
+      height: 8vw;
+    }
+  }
+  
+  /* .test {
+    overflow: hidden;
+    width: 100vw;
+    height: 100px;
+    visibility: visible; 
+  } */
+  
+  
+  .carousel-track-container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 7vw;
+  }
+  
+  .carousel-track {
+    display: flex;
+    animation: scroll linear infinite;
+    animation-duration: calc(10s * var(--num-items) / 3); /* Adjust based on the number of items */
+  }
+  
+  .carousel-slide {
+    list-style-type: none;
+  }
+  
+  .carousel-slide img {
+    width: 10vw; /* Adjust based on your logo size */
+    padding: 0.8vw;
+  }
+  
+  /* Keyframes for the infinite scrolling effect */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-10vw * var(--num-items))); /* Ensure this matches the total width of the items you're cycling through */
+    }
+  }
+  

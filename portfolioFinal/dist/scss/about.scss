@@ -3,20 +3,33 @@
 
 
 .about {
-    background-color: $primary-color;
-    height: 8em;
+    height: 50vw;
     width: 100vw;
-    margin-top: 3em;
-    // background-image: url(dist/images/about.png);
+    display: flex;
+    // max-width: 1920px;
+    background-color: $primary-color;
+    margin-top: 7vw;
+    background-image: url('/dist/images/about.png');
+    background-size: auto 90%; 
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
-.about-container {
-    background-image: url('/dist/images/about.png');
-    z-index: 100000;
-    background-size: cover; /* Or 'contain' based on your needs */
-    background-repeat: no-repeat;
-    background-position: center; /* This centers the background image */
-    width: 100%; 
-    height: 8em;
-    margin-top: -1em;
+// .about-container {
+//     background-color: $primary-color;
+//     width: 100%; 
+//     height: 100%;
+//     height: 50vw;
+//     width: 100vw;
+//     margin-top: 20vw;
+
+// }
+
+@media (min-width: 1200px) {
+
+    .about {
+        background-size: auto 90%; 
+        height: 30vw;
+    }
 }

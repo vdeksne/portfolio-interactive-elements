@@ -31,28 +31,28 @@ gsap.timeline({
   marginTop: '-20px'
 });
 
-document.getElementById('arrowBtn').addEventListener('mouseenter', function(e) {
-  gsap.to('.arrow', {
-    y: 10,
-    duration: 0.8,
-    ease: 'back.inOut(3)',
-    overwrite: 'auto'
-  });
-});
+// document.getElementById('arrowBtn').addEventListener('mouseenter', function(e) {
+//   gsap.to('.arrow', {
+//     y: 10,
+//     duration: 0.8,
+//     ease: 'back.inOut(3)',
+//     overwrite: 'auto'
+//   });
+// });
 
-document.getElementById('arrowBtn').addEventListener('mouseleave', function(e) {
-  gsap.to('.arrow', {
-    y: 0,
-    duration: 0.5,
-    ease: 'power3.out',
-    overwrite: 'auto'
-  });
-});
+// document.getElementById('arrowBtn').addEventListener('mouseleave', function(e) {
+//   gsap.to('.arrow', {
+//     y: 0,
+//     duration: 0.5,
+//     ease: 'power3.out',
+//     overwrite: 'auto'
+//   });
+// });
 
-document.getElementById('arrowBtn').addEventListener('click', function(e) {
-  gsap.to(window, {
-    scrollTo: innerHeight,
-    duration: 1.5,
-    ease: 'power1.inOut'
-  });
-});
+// document.getElementById('arrowBtn').addEventListener('click', function(e) {
+//   gsap.to(window, {
+//     scrollTo: innerHeight,
+//     duration: 1.5,
+//     ease: 'power1.inOut'
+//   });
+// });

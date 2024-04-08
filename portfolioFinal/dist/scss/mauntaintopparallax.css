@@ -24,7 +24,7 @@ div {
 .longer-scroll {
   height: 5000px;
   background-color: #ffffff;
-  margin-top: 100vh;
+  margin-top: 50vw;
   z-index: 100;
   width: 100%;
 }
@@ -33,18 +33,18 @@ div {
   height: 100px; /* Adjust height as needed */
   background: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)); /* White gradient from opaque to transparent */
   position: relative;
-  margin-top: -100px;
+  margin-top: -95px;
 }
 
 @media (max-width: 430px) {
   .longer-scroll {
     height: 5000px;
-    margin-top: 60vh;
+    margin-top: 70vw;
   }
   .gradient-div {
     height: 70px; /* Adjust height as needed */
     background: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0)); /* White gradient from opaque to transparent */
     position: relative;
-    margin-top: -70px;
+    margin-top: -67px;
   }
 }/*# sourceMappingURL=mauntaintopparallax.css.map */
