@@ -23,7 +23,7 @@ div {
 }
 
 .longer-scroll {
-  height: 5000px;
+  height: 500px;
   background-color: #ffffff;
   margin-top: 50vw;
   z-index: 100;
@@ -31,10 +31,10 @@ div {
 }
 
 .gradient-div {
-  height: 100px; /* Adjust height as needed */
+  height: 40px; /* Adjust height as needed */
   background: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0)); /* White gradient from opaque to transparent */
   position: relative;
-  margin-top: -95px;
+  margin-top: -38px;
 }
 
 
