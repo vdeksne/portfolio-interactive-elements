@@ -14,14 +14,14 @@ gsap.set('.main', {
 
 gsap.set('.scrollDist', {
   width: '100%',
-  height: '200vh' // Adjust this to 200vh to represent two full viewport heights
+  height: '120vh' // Adjust this to 200vh to represent two full viewport heights
 });
 
 gsap.timeline({
   scrollTrigger: {
     trigger: '.scrollDist',
     start: 'top top',
-    end: '200vh bottom', // Change '150% bottom' to '200vh bottom' to stop scrolling after the `.scrollDist` has been scrolled
+    end: '120vh bottom', // Change '150% bottom' to '200vh bottom' to stop scrolling after the `.scrollDist` has been scrolled
     scrub: 1
   }
 })
@@ -31,28 +31,5 @@ gsap.timeline({
   marginTop: '-20px'
 });
 
-// document.getElementById('arrowBtn').addEventListener('mouseenter', function(e) {
-//   gsap.to('.arrow', {
-//     y: 10,
-//     duration: 0.8,
-//     ease: 'back.inOut(3)',
-//     overwrite: 'auto'
-//   });
-// });
 
-// document.getElementById('arrowBtn').addEventListener('mouseleave', function(e) {
-//   gsap.to('.arrow', {
-//     y: 0,
-//     duration: 0.5,
-//     ease: 'power3.out',
-//     overwrite: 'auto'
-//   });
-// });
 
-// document.getElementById('arrowBtn').addEventListener('click', function(e) {
-//   gsap.to(window, {
-//     scrollTo: innerHeight,
-//     duration: 1.5,
-//     ease: 'power1.inOut'
-//   });
-// });

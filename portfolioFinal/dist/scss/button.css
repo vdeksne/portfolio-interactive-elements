@@ -7,9 +7,9 @@ body {
   display: flex;
   width: 100vw;
   justify-content: center;
-  height: 4rem;
   position: relative;
   align-items: center;
+  margin: 1em 0;
 }
 
 .btn-77 { /* Ensures the animation loops infinitely */
@@ -26,11 +26,11 @@ body {
   text-transform: uppercase;
   color: #0AFA94;
   background-color: #010F19;
-  width: 16.25em;
-  height: 4.375em;
+  width: 16em;
+  height: 4em;
   line-height: 1.5;
-  z-index: 100000000;
   margin-top: 0;
+  font-size: 0.2rem;
 }
 
 .btn-77:hover {
@@ -43,5 +43,28 @@ body {
   }
   100% {
     box-shadow: 0 0 0 20px rgb(255, 255, 255); /* Increased spread for a wider effect */
+  }
+}
+@media (max-width: 480px) {
+  .btn-77 {
+    border: 0.208vw solid;
+    border-radius: 208.125vw;
+    box-shadow: 0 0 0 0em transparent;
+    padding: 4vw 10vw;
+    width: 54.167vw;
+    height: 14.583vw;
+    line-height: 1.5;
+    z-index: 100000000;
+    margin-top: 0;
+    font-size: 3.333vw;
+  }
+  .longer-scroll {
+    margin-top: 120vw;
+  }
+  .carousel {
+    height: 12vw;
+  }
+  .button {
+    margin: 1.5em 0;
   }
 }/*# sourceMappingURL=button.css.map */

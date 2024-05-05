@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import 'variables';
 
+
 body {
     background-color: white;
   }
@@ -9,9 +10,11 @@ body {
     display: flex;
     width: 100vw;
     justify-content: center;
-    height: 4rem;
+    // height: 4rem;
     position: relative;
     align-items: center;
+    // height: 4em;
+    margin: 1em 0;
   }
 
   .btn-77 {
@@ -29,17 +32,23 @@ body {
     text-transform: uppercase;
     color: $secondary-color;
     background-color: $primary-color;
-    width: 16.25em;
-    height: 4.375em;
+    width: 16em;
+    height: 4em;
     line-height: 1.5;
-    z-index: 100000000;
+    // z-index: 100000000;
     margin-top: 0;
+    font-size: 0.2rem;
   }
 
   .btn-77:hover {
    color: $primary-color;
    background-color: $secondary-color;
   }
+
+//   .carousel,
+// .btn-77 {
+//     flex: 1; /* Adjust as needed */
+// }
   
   @-webkit-keyframes pulse {
     0%, 100% {
@@ -59,3 +68,28 @@ body {
     }
   }
   
+  @media (max-width: 480px) {
+    .btn-77 {
+      border: 0.208vw solid;
+      border-radius: 208.125vw;
+      box-shadow: 0 0 0 0em transparent;
+      padding: 4vw 10vw;
+      width: 54.167vw;
+      height: 14.583vw;
+      line-height: 1.5;
+      z-index: 100000000;
+      margin-top: 0;
+      font-size: 3.333vw;
+    }
+    .longer-scroll {
+      // height: 5000px;
+      margin-top: 120vw;
+    }
+    .carousel {
+      height: 12vw;
+    }
+    .button {
+      margin: 1.5em 0;
+    }
+
+  }

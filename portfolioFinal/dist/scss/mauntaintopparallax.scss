@@ -23,7 +23,7 @@ div {
 }
 
 .longer-scroll {
-  height: 500px;
+  height: 80vh;
   background-color: #ffffff;
   margin-top: 50vw;
   z-index: 100;
@@ -39,11 +39,11 @@ div {
 
 
 @media (max-width: 430px) {
-  .longer-scroll {
-    height: 5000px;
-    margin-top: 70vw;
+  // .longer-scroll {
+  //   // height: 5000px;
+  //   margin-top: 70vw;
 
-  }
+  // }
   
   .gradient-div {
     height: 70px; /* Adjust height as needed */
@@ -51,4 +51,46 @@ div {
     position: relative;
     margin-top: -67px;
   }
+}
+
+@media (max-width: 1030px) {
+
+  .longer-scroll {
+      margin-top: 79vw;
+  }
+  .longer-scroll {
+    height: 102vh;
+}
+}
+@media (max-width: 920px) {
+
+  .longer-scroll {
+    height: 105vh;
+}
+}
+
+@media (max-width: 480px) {
+
+  .longer-scroll {
+      margin-top: 49vw;
+  }
+  .longer-scroll {
+    height: 91vh;
+}
+}
+@media (max-width: 380px) {
+
+  .longer-scroll {
+      margin-top: 79vw;
+  }
+  .longer-scroll {
+    height: 120vh;
+}
+}
+
+@media (min-width: 2400px) {
+
+  .longer-scroll {
+    height: 88vh;
+}
 }
