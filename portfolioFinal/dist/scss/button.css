@@ -45,6 +45,14 @@ body {
     box-shadow: 0 0 0 20px rgb(255, 255, 255); /* Increased spread for a wider effect */
   }
 }
+@keyframes pulse2 {
+  0% {
+    box-shadow: 0 0 0 0 rgb(10, 250, 148);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgb(1, 15, 25); /* Increased spread for a wider effect */
+  }
+}
 @media (max-width: 480px) {
   .btn-77 {
     border: 0.208vw solid;

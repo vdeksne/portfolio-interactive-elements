@@ -191,6 +191,9 @@ nav {
   left: 50%; /* Optional: for horizontal centering */
   transform: translate(-50%, -50%); /* Shifts the element back by 50% of its own width and height */
 }
+.topnav {
+    padding-left: 0.8rem;
+}
 
 @media (max-width:  990px) {
     // .logo-desktop {
@@ -202,23 +205,48 @@ nav {
         display: none;
     }
     nav {
-        justify-content: flex-end;
+        justify-content: center;
         display: flex;
+        // changes on open state: 
+        flex-direction: column;
     }
-    .mainNav {
-        display: flex;
-        align-items: center; /* Aligns vertically center */
-        position: relative;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: flex-start;
-        // height: 100vh; /* Example height */
-        // display: grid;
-        // place-items: center; /* Centering both horizontally and vertically */
-        // height: 100vh; /* Example height */
-        position: relative;
-        // height: 100vh; /* Example height */
+
+    // changes on open state: 
+
+    #btnClose {
+        position: absolute;
+        top: 1.5rem;
+        right: 2rem;
     }
+
+    #btnOpen {
+        position: absolute;
+        // top: 0;
+        right: 0;
+    }
+    // 
+    // .mainNav {
+    //     display: flex;
+    //     align-items: center;
+    //     position: relative;
+    //     position: relative;
+    //     flex-direction: column;
+    //     align-content: center;
+    //     justify-content: center;
+    //     flex-direction: column;
+    //     // background-color: red;
+    // }
+    // .topnav {
+    //     display: flex;
+    //     height: 2.2em;
+    //     position: fixed;
+    //     font-size: 0.3em;
+    //     z-index: 1000000 !important;
+    //     background-color: #d9e629;
+    //     padding-left: 0.5em;
+    //     width: 100%;
+    //     margin-top: 0;
+    // }
 }
 
 @media (max-width: 480px) {

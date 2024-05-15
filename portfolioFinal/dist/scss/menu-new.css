@@ -169,6 +169,10 @@ nav {
   transform: translate(-50%, -50%); /* Shifts the element back by 50% of its own width and height */
 }
 
+.topnav {
+  padding-left: 0.8rem;
+}
+
 @media (max-width: 990px) {
   .topnav_menu {
     align-content: center;
@@ -176,14 +180,18 @@ nav {
     display: none;
   }
   nav {
-    justify-content: flex-end;
+    justify-content: center;
     display: flex;
+    flex-direction: column;
   }
-  .mainNav {
-    display: flex;
-    align-items: center; /* Aligns vertically center */
-    position: relative;
-    position: relative;
+  #btnClose {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+  }
+  #btnOpen {
+    position: absolute;
+    right: 0;
   }
 }
 @media (max-width: 480px) {
