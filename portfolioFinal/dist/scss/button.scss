@@ -18,8 +18,8 @@ body {
   }
 
   .btn-77 {
-    -webkit-animation: pulse 2s infinite; /* Ensures the animation loops infinitely */
-    animation: pulse 2s infinite; /* Ensures the animation loops infinitely */
+    -webkit-animation: pulse2 2s infinite; /* Ensures the animation loops infinitely */
+    animation: pulse2 2s infinite; /* Ensures the animation loops infinitely */
     border: 1px solid;
     border-radius: 999px;
     box-shadow: 0 0 0 0em transparent;
@@ -41,6 +41,33 @@ body {
   }
 
   .btn-77:hover {
+   color: $primary-color;
+   background-color: $secondary-color;
+  }
+  .btn-78 {
+    -webkit-animation: pulse2 2s infinite; /* Ensures the animation loops infinitely */
+    animation: pulse2 2s infinite; /* Ensures the animation loops infinitely */
+    border: 1px solid;
+    border-radius: 999px;
+    box-shadow: 0 0 0 0em transparent;
+    box-sizing: border-box;
+    display: block;
+    font-weight: 900;
+    overflow: hidden;
+    padding: 1.2em 3em;
+    position: relative;
+    text-transform: uppercase;
+    color: $secondary-color;
+    background-color: $primary-color;
+    width: 16em;
+    height: 4em;
+    line-height: 1.5;
+    // z-index: 100000000;
+    margin-top: 0;
+    font-size: 0.2rem;
+  }
+
+  .btn-78:hover {
    color: $primary-color;
    background-color: $secondary-color;
   }
@@ -83,6 +110,22 @@ body {
     }
   }
   
+  @media (max-width: 1000px) {
+
+    .btn-78 {
+      border: 0.208vw solid;
+      border-radius: 208.125vw;
+      box-shadow: 0 0 0 0em transparent;
+      padding: 4vw 10vw;
+      width: 54.167vw;
+      height: 14.583vw;
+      line-height: 1.5;
+      // z-index: 100000000;
+      margin-top: 0;
+      font-size: 3.333vw;
+    }
+
+  }
   
   @media (max-width: 480px) {
     .btn-77 {
@@ -94,6 +137,18 @@ body {
       height: 14.583vw;
       line-height: 1.5;
       z-index: 100000000;
+      margin-top: 0;
+      font-size: 3.333vw;
+    }
+    .btn-78 {
+      border: 0.208vw solid;
+      border-radius: 208.125vw;
+      box-shadow: 0 0 0 0em transparent;
+      padding: 4vw 10vw;
+      width: 54.167vw;
+      height: 14.583vw;
+      line-height: 1.5;
+      // z-index: 100000000;
       margin-top: 0;
       font-size: 3.333vw;
     }
