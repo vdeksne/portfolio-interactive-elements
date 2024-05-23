@@ -11,9 +11,247 @@
         <link rel="stylesheet" href="scss/menu-new.css">
         <link rel="stylesheet" href="scss/test.css">
         <link rel="stylesheet" href="scss/footer-new.css">
+        <link rel="stylesheet" href="scss/footer-new.css">
+        <link rel="stylesheet" href="scss/work.css">
         <script src="menu_new.js" defer></script>
+        <script src="work-script.js" defer></script>
 </head>
 <body>
-    
+<!-- header menu bar with toggle effect starts here -->
+  <header class="topnav wrapper">
+
+      <a href="index.html" class="toplogo logo-mobile">
+          <svg viewBox="0 0 85 72" xmlns="http://www.w3.org/2000/svg">
+              <path d="M34.6069 69.1858L0.989258 37.6912L34.6069 6.19653L5.22386 37.6912L34.6069 69.1858Z"/>
+              <path d="M74.9305 37.5994L43.4296 71.3633L11.9412 37.5994L43.4296 64.7431L74.9305 37.5994Z"/>
+              <path d="M84.1421 37.6428L50.7165 69.1851L80.2732 37.7865L46.0897 6.80209L43.4238 48.4598C43.4238 48.4598 43.4811 7.33438 43.4503 0.958252L84.1421 37.6428Z"/>
+          </svg>                    
+      </a>
+
+      <a href="home.html" class="logo-desktop">
+
+        <svg width="160" height="33" viewBox="0 0 160 33" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 32L0 17.5L16 3L2.01511 17.5L16 32Z" />
+          <path d="M34 17L19.4976 33L5 17L19.4976 29.8634L34 17Z" />
+          <path d="M39 17.2046L23.4023 32L37.194 17.2722L21.244 2.73922L20 22.2791C20 22.2791 20.0272 2.99029 20.0128 0L39 17.2063V17.2046Z" />
+          <path d="M47 11.7832H48.119L51.2979 19.8532L54.4888 11.7832H55.6078L51.8023 21.3281H50.8075L47.002 11.7832H47Z" />
+          <path d="M57.2573 11.7832H58.3203V21.3281H57.2573V11.7832Z" />
+          <path d="M60.2441 11.7832H61.3071V21.3281H60.2441V11.7832ZM61.7595 16.4805L66.2196 11.7832H67.5287L63.0667 16.4805L67.813 21.3281H66.5038L61.7595 16.4805Z" />
+          <path d="M71.212 12.685H68.1572V11.7832H75.3317V12.685H72.277V21.3281H71.214V12.685H71.212Z" />
+          <path d="M78.1201 20.9111C77.3695 20.5063 76.7469 19.8971 76.3245 19.1557C75.8941 18.3581 75.6699 17.4663 75.6699 16.5605C75.6699 15.6547 75.8941 14.763 76.3245 13.9654C76.7469 13.2239 77.3655 12.6147 78.1121 12.2039C78.8988 11.7911 79.7736 11.5767 80.6624 11.5767C81.5513 11.5767 82.426 11.7931 83.2128 12.2039C83.9594 12.6147 84.578 13.2239 85.0004 13.9654C85.4308 14.763 85.655 15.6547 85.655 16.5605C85.655 17.4663 85.4308 18.3581 85.0004 19.1557C84.578 19.8971 83.9554 20.5063 83.2048 20.9111C82.418 21.32 81.5472 21.5324 80.6604 21.5324C79.7736 21.5324 78.9029 21.32 78.1161 20.9111H78.1181H78.1201ZM82.6543 20.0855C83.2488 19.7629 83.7412 19.2779 84.0735 18.6847C84.4138 18.0314 84.59 17.306 84.592 16.5705C84.592 15.8351 84.4178 15.1077 84.0815 14.4544C83.7532 13.8632 83.2668 13.3762 82.6763 13.0476C82.0697 12.7129 81.3851 12.5406 80.6925 12.5486C79.9938 12.5386 79.3032 12.7069 78.6867 13.0396C78.0881 13.3642 77.5937 13.8532 77.2614 14.4463C76.9171 15.0996 76.7369 15.8271 76.7369 16.5645C76.7369 17.304 76.9131 18.0314 77.2554 18.6847C77.5857 19.2759 78.0781 19.7609 78.6746 20.0855C79.2892 20.4081 79.9718 20.5765 80.6664 20.5765C81.3611 20.5765 82.0437 20.4081 82.6583 20.0855H82.6543Z" />
+          <path d="M87.2944 11.7832H90.9778C91.7905 11.7251 92.5952 11.9736 93.2358 12.4786C93.7022 12.9976 93.9745 13.6629 94.0045 14.3603C94.0345 15.0577 93.8203 15.7451 93.4 16.3022C92.9676 16.8011 92.369 17.1258 91.7144 17.218L93.9785 21.3281H92.8735L90.6375 17.2721H88.3614V21.3281H87.2984V11.7832H87.2944ZM90.8396 16.3723C91.3921 16.4044 91.9386 16.24 92.381 15.9074C92.5732 15.737 92.7214 15.5266 92.8194 15.2901C92.9155 15.0537 92.9576 14.7972 92.9395 14.5427C92.9676 14.2761 92.9315 14.0096 92.8355 13.7591C92.7394 13.5106 92.5852 13.2862 92.387 13.1078C91.9326 12.7992 91.3881 12.6509 90.8396 12.685H88.3574V16.3723H90.8396Z" />
+          <path d="M95.6562 11.7832H96.7212V21.3281H95.6562V11.7832Z" />
+          <path d="M102.172 11.7832H103.167L106.973 21.3281H105.882L104.859 18.775H100.467L99.4577 21.3281H98.3667L102.172 11.7832ZM104.56 17.8733L102.665 13.0136L100.783 17.8733H104.56Z" />
+          <path d="M108.428 11.783H111.851C112.796 11.761 113.735 11.9574 114.593 12.3541C115.346 12.7108 115.975 13.282 116.401 13.9994C116.837 14.7609 117.056 15.6286 117.036 16.5044C117.036 18.0875 116.571 19.2879 115.644 20.1015C114.717 20.9151 113.43 21.3239 111.785 21.3239H108.43V11.781L108.428 11.783ZM111.987 19.2939C112.339 19.3159 112.694 19.2618 113.022 19.1316C113.35 19.0013 113.646 18.8009 113.889 18.5424C114.355 17.9693 114.591 17.2438 114.551 16.5084C114.579 15.805 114.343 15.1156 113.889 14.5765C113.66 14.322 113.378 14.1216 113.064 13.9914C112.75 13.8611 112.409 13.801 112.067 13.819H110.84V19.2939H111.985H111.987Z" />
+          <path d="M117.988 11.7832H124.754V13.8172H120.402V15.6068H123.581V17.5045H120.402V19.2941H124.754V21.3281H117.988V11.7832Z" />
+          <path d="M125.71 11.7832H128.124V15.745L131.411 11.7832H134.275L130.414 16.4264L134.534 21.3261H131.669L128.122 17.1097V21.3301H125.708V11.7852L125.71 11.7832Z" />
+          <path d="M136.199 21.3621C135.693 21.276 135.2 21.1176 134.74 20.8912V18.7209C135.226 18.9734 135.741 19.1658 136.273 19.292C136.772 19.4163 137.282 19.4804 137.795 19.4824C138.143 19.5044 138.491 19.4343 138.803 19.278C138.91 19.2219 138.996 19.1357 139.058 19.0335C139.12 18.9313 139.148 18.8111 139.146 18.6908C139.148 18.5065 139.084 18.3301 138.962 18.1918C138.809 18.0295 138.625 17.8973 138.423 17.8031C138.187 17.6848 137.819 17.5225 137.318 17.3121C136.593 17.0436 135.937 16.6187 135.394 16.0696C135.032 15.6328 134.822 15.0897 134.798 14.5226C134.772 13.9555 134.932 13.3964 135.252 12.9274C135.577 12.4845 136.019 12.1399 136.527 11.9315C137.124 11.685 137.764 11.5647 138.409 11.5767C138.932 11.5707 139.452 11.6168 139.964 11.713C140.417 11.8032 140.857 11.9495 141.274 12.1499V14.2661C140.533 13.8633 139.702 13.6468 138.859 13.6388C138.499 13.6228 138.141 13.6949 137.817 13.8513C137.7 13.9034 137.6 13.9895 137.532 14.0977C137.462 14.206 137.426 14.3302 137.428 14.4585C137.43 14.5907 137.468 14.721 137.538 14.8332C137.608 14.9454 137.706 15.0376 137.825 15.0997C138.293 15.3602 138.781 15.5827 139.284 15.769C139.814 15.9714 140.321 16.234 140.793 16.5466C141.126 16.771 141.396 17.0756 141.578 17.4343C141.754 17.8391 141.838 18.278 141.822 18.7189C141.84 19.1157 141.762 19.5105 141.594 19.8712C141.426 20.2319 141.176 20.5465 140.859 20.787C140.219 21.284 139.262 21.5305 137.989 21.5305C137.388 21.5305 136.79 21.4723 136.201 21.3601L136.199 21.3621Z"/>
+          <path d="M142.775 11.7832H145.161L148.666 17.4645V11.7832H151.08V21.3281H148.704L145.185 15.6348V21.3281H142.773V11.7832H142.775Z" />
+          <path d="M152.308 11.7832H159.074V13.8172H154.722V15.6068H157.901V17.5045H154.722V19.2941H159.074V21.3281H152.308V11.7832Z" />
+          </svg>
+                          
+      </a>
+
+      <nav class="mainNav" >
+
+        <span id="nav-label" hidden>
+          Navigation
+        </span>
+
+        <button id="btnOpen" id="btnOpen" class="topbav__open" aria-expanded="false" aria-labelledby="nav-label">
+          <img id="menuBtn" src="images/burger.svg" >
+        </button>
+
+        <div class="topnav_menu" id="topNavMenu" role="dialog" aria-labelledby="nav-label">
+
+          <button id="btnClose" aria-label="Close" class="topnav__close">
+            <img class="buttonx" id="buttonx" src="images/close.svg">
+          </button>
+          
+            <ul class="topnav__links">
+              <li class="topnav__item">
+                  <a href="home.html" class="topnav__link">&nbsp;home&nbsp;</a>
+              </li>
+              <li class="topnav__item">
+                  <a href="about.html" class="topnav__link">&nbsp;about&nbsp;</a>
+              </li>
+              <li class="topnav__item">
+                  <a href="work.html" class="topnav__link">&nbsp;work&nbsp;</a>
+              </li>
+              <li class="topnav__item">
+                  <a href="connect.html" class="topnav__link">&nbsp;chat&nbsp;</a>
+              </li>
+              <li class="topnav__item">
+                  <a href="shop.html" class="topnav__link">&nbsp;blog&nbsp;</a>
+              </li>
+              <li class="topnav__item">
+                  <a href="shop.html" class="topnav__link">&nbsp;shop&nbsp;</a>
+              </li>
+          </ul>
+
+        </div>
+      </nav>
+
+  </header>
+<!-- header menu bar with toggle effect ends here -->
+    <div class="container">
+        <div class="filter-menu">
+          <li class="filter-btn active" data-project="all">All</li>
+          <li class="filter-btn" data-project="dev">Coding</li>
+          <li class="filter-btn" data-project="des">Design</li>
+          <li class="filter-btn" data-project="video">Video</li>
+          <li class="filter-btn" data-project="creative">Creative</li>
+        </div>
+        <div class="filter-project-items">
+          <div class="filter-project-item" data-project="dev">
+            <a href="https://platform.showheroes.com/format-demos/preview.html#midroll=true&preview=1&f=intext&source=https%3A%2F%2Fapi.create.showheroes.com%2Fcreatives%2F4588%2Fvast%3Fpreview_duration%3D20%26swipe_area%3D74%26version%3D3%26preview%3D1%26gdpr%3D%7Bgdpr%7D%26cs%3D%7Bgdpr_consent%7D%26cb%3D%7Brandom%7D%26domain%3D%7Bdomain%7D%26supply_id%3D%7Bsite_id%7D%26demand_id%3D%7Bcampaign_id%7D%26demand_id_2%3D%7Bline_item_id%7D%26device_type%3D%7Bdevice_type%7D%26utm_medium%3D%7Bcampaign_id%7D%26utm_campaign%3D%7Bcampaign_name%7D%26utm_term%3D%7Bline_item_name%7D%26utm_content%3D%7Bline_item_id%7D" target="_blank">
+            <img src="assets/work/1.png" alt="Project" />
+            </a>
+          </div>
+          <div class="filter-project-item" data-project="dev">
+            <a href="https://platform.showheroes.com/format-demos/preview.html#midroll=true&preview=1&f=intext&source=https%3A%2F%2Fapi.create.showheroes.com%2Fcreatives%2F4604%2Fvast%3Fpreview_duration%3D20%26swipe_area%3D74%26version%3D3%26preview%3D1%26gdpr%3D%7Bgdpr%7D%26cs%3D%7Bgdpr_consent%7D%26cb%3D%7Brandom%7D%26domain%3D%7Bdomain%7D%26supply_id%3D%7Bsite_id%7D%26demand_id%3D%7Bcampaign_id%7D%26demand_id_2%3D%7Bline_item_id%7D%26device_type%3D%7Bdevice_type%7D%26utm_medium%3D%7Bcampaign_id%7D%26utm_campaign%3D%7Bcampaign_name%7D%26utm_term%3D%7Bline_item_name%7D%26utm_content%3D%7Bline_item_id%7D" target="_blank">
+            <img src="assets/work/2.png" alt="Project" />
+            </a>
+          </div>
+          <div class="filter-project-item" data-project="dev">
+            <a href="https://platform.showheroes.com/format-demos/preview.html#midroll=true&preview=1&f=intext&source=https%3A%2F%2Fapi.create.showheroes.com%2Fcreatives%2F3998%2Fvast%3Fpreview_duration%3D20%26swipe_area%3D74%26version%3D3%26preview%3D1%26gdpr%3D%7Bgdpr%7D%26cs%3D%7Bgdpr_consent%7D%26cb%3D%7Brandom%7D%26domain%3D%7Bdomain%7D%26supply_id%3D%7Bsite_id%7D%26demand_id%3D%7Bcampaign_id%7D%26demand_id_2%3D%7Bline_item_id%7D%26device_type%3D%7Bdevice_type%7D%26utm_medium%3D%7Bcampaign_id%7D%26utm_campaign%3D%7Bcampaign_name%7D%26utm_term%3D%7Bline_item_name%7D%26utm_content%3D%7Bline_item_id%7D" target="_blank">
+            <img src="assets/work/3.png" alt="Project" />
+            </a>
+          </div>
+          <div class="filter-project-item" data-project="dev">
+            <a href="https://platform.showheroes.com/format-demos/preview.html#midroll=true&preview=1&f=intext&source=https%3A%2F%2Fapi.create.showheroes.com%2Fcreatives%2F3466%2Fvast%3Fpreview_duration%3D20%26swipe_area%3D74%26version%3D3%26preview%3D1%26gdpr%3D%7Bgdpr%7D%26cs%3D%7Bgdpr_consent%7D%26cb%3D%7Brandom%7D%26domain%3D%7Bdomain%7D%26supply_id%3D%7Bsite_id%7D%26demand_id%3D%7Bcampaign_id%7D%26demand_id_2%3D%7Bline_item_id%7D%26device_type%3D%7Bdevice_type%7D%26utm_medium%3D%7Bcampaign_id%7D%26utm_campaign%3D%7Bcampaign_name%7D%26utm_term%3D%7Bline_item_name%7D%26utm_content%3D%7Bline_item_id%7D" target="_blank">
+            <img src="assets/work/4.png" alt="Project" />
+            </a>
+          </div>
+          <div class="filter-project-item" data-project="dev">
+            <a href="https://platform.showheroes.com/format-demos/preview.html#midroll=true&preview=1&f=intext&source=https%3A%2F%2Fapi.create.showheroes.com%2Fcreatives%2F3328%2Fvast%3Fpreview_duration%3D20%26swipe_area%3D74%26version%3D3%26preview%3D1%26gdpr%3D%7Bgdpr%7D%26cs%3D%7Bgdpr_consent%7D%26cb%3D%7Brandom%7D%26domain%3D%7Bdomain%7D%26supply_id%3D%7Bsite_id%7D%26demand_id%3D%7Bcampaign_id%7D%26demand_id_2%3D%7Bline_item_id%7D%26device_type%3D%7Bdevice_type%7D%26utm_medium%3D%7Bcampaign_id%7D%26utm_campaign%3D%7Bcampaign_name%7D%26utm_term%3D%7Bline_item_name%7D%26utm_content%3D%7Bline_item_id%7D" target="_blank">
+            <img src="assets/work/5.png" alt="Project" />
+            </a>
+          </div>
+          <div class="filter-project-item" data-project="dev">
+            <a href="https://platform.showheroes.com/format-demos/preview.html#midroll=true&preview=1&f=intext&source=https%3A%2F%2Fapi.create.showheroes.com%2Fcreatives%2F3475%2Fvast%3Fpreview_duration%3D20%26swipe_area%3D74%26version%3D3%26preview%3D1%26gdpr%3D%7Bgdpr%7D%26cs%3D%7Bgdpr_consent%7D%26cb%3D%7Brandom%7D%26domain%3D%7Bdomain%7D%26supply_id%3D%7Bsite_id%7D%26demand_id%3D%7Bcampaign_id%7D%26demand_id_2%3D%7Bline_item_id%7D%26device_type%3D%7Bdevice_type%7D%26utm_medium%3D%7Bcampaign_id%7D%26utm_campaign%3D%7Bcampaign_name%7D%26utm_term%3D%7Bline_item_name%7D%26utm_content%3D%7Bline_item_id%7D" target="_blank">
+            <img src="assets/work/6.png" alt="Project" />
+            </a>
+          </div>
+          <div class="filter-project-item" data-project="dev">
+            <a href="https://platform.showheroes.com/format-demos/preview.html#midroll=true&preview=1&f=intext&source=https%3A%2F%2Fapi.create.showheroes.com%2Fcreatives%2F3469%2Fvast%3Fpreview_duration%3D20%26swipe_area%3D74%26version%3D3%26preview%3D1%26gdpr%3D%7Bgdpr%7D%26cs%3D%7Bgdpr_consent%7D%26cb%3D%7Brandom%7D%26domain%3D%7Bdomain%7D%26supply_id%3D%7Bsite_id%7D%26demand_id%3D%7Bcampaign_id%7D%26demand_id_2%3D%7Bline_item_id%7D%26device_type%3D%7Bdevice_type%7D%26utm_medium%3D%7Bcampaign_id%7D%26utm_campaign%3D%7Bcampaign_name%7D%26utm_term%3D%7Bline_item_name%7D%26utm_content%3D%7Bline_item_id%7D" target="_blank">
+            <img src="assets/work/7.png" alt="Project" />
+            </a>
+          </div>
+          <div class="filter-project-item" data-project="dev">
+            <a href="https://platform.showheroes.com/format-demos/preview.html#midroll=true&preview=1&f=intext&source=https%3A%2F%2Fapi.create.showheroes.com%2Fcreatives%2F3749%2Fvast%3Fpreview_duration%3D20%26swipe_area%3D74%26version%3D3%26preview%3D1%26gdpr%3D%7Bgdpr%7D%26cs%3D%7Bgdpr_consent%7D%26cb%3D%7Brandom%7D%26domain%3D%7Bdomain%7D%26supply_id%3D%7Bsite_id%7D%26demand_id%3D%7Bcampaign_id%7D%26demand_id_2%3D%7Bline_item_id%7D%26device_type%3D%7Bdevice_type%7D%26utm_medium%3D%7Bcampaign_id%7D%26utm_campaign%3D%7Bcampaign_name%7D%26utm_term%3D%7Bline_item_name%7D%26utm_content%3D%7Bline_item_id%7D" target="_blank">
+            <img src="assets/work/8.png" alt="Project" />
+            </a>
+          </div>
+          <div class="filter-project-item" data-project="dev ">
+            <a href="https://platform.showheroes.com/format-demos/preview.html#midroll=true&preview=1&f=intext&source=https%3A%2F%2Fapi.create.showheroes.com%2Fcreatives%2F3473%2Fvast%3Fpreview_duration%3D20%26swipe_area%3D74%26version%3D3%26preview%3D1%26gdpr%3D%7Bgdpr%7D%26cs%3D%7Bgdpr_consent%7D%26cb%3D%7Brandom%7D%26domain%3D%7Bdomain%7D%26supply_id%3D%7Bsite_id%7D%26demand_id%3D%7Bcampaign_id%7D%26demand_id_2%3D%7Bline_item_id%7D%26device_type%3D%7Bdevice_type%7D%26utm_medium%3D%7Bcampaign_id%7D%26utm_campaign%3D%7Bcampaign_name%7D%26utm_term%3D%7Bline_item_name%7D%26utm_content%3D%7Bline_item_id%7D" target="_blank">
+            <img src="assets/work/9.png" alt="Project" />
+            </a>
+          </div>
+          <div class="filter-project-item" data-project="video">
+            <a href="videoplaylist.html">
+              <img src="assets/work/10.png" alt="Project" />
+            </a>
+          </div>
+          <div class="filter-project-item" data-project="video">
+            <a href="videoplaylist.html">
+            <img src="assets/work/11.png" alt="Project" />
+            </a>
+          </div>
+          <div class="filter-project-item" data-project="video">
+            <a href="videoplaylist.html">
+            <img src="assets/work/12.png" alt="Project" />
+            </a>
+          </div>
+          <div class="filter-project-item" data-project="dev">
+            <a href="https://platform.showheroes.com/format-demos/preview.html#midroll=true&preview=1&f=intext&source=https%3A%2F%2Fapi.create.showheroes.com%2Fcreatives%2F3473%2Fvast%3Fpreview_duration%3D20%26swipe_area%3D74%26version%3D3%26preview%3D1%26gdpr%3D%7Bgdpr%7D%26cs%3D%7Bgdpr_consent%7D%26cb%3D%7Brandom%7D%26domain%3D%7Bdomain%7D%26supply_id%3D%7Bsite_id%7D%26demand_id%3D%7Bcampaign_id%7D%26demand_id_2%3D%7Bline_item_id%7D%26device_type%3D%7Bdevice_type%7D%26utm_medium%3D%7Bcampaign_id%7D%26utm_campaign%3D%7Bcampaign_name%7D%26utm_term%3D%7Bline_item_name%7D%26utm_content%3D%7Bline_item_id%7D" target="_blank">
+            <img src="assets/work/16.png" alt="dev" />
+            </a>
+          </div>
+          <div class="filter-project-item" data-project="des">
+            <a href="https://www.figma.com/proto/fPrbOFAJCVQxwpfZVjUsBI/Expander_1?page-id=0%3A1&node-id=13-53&viewport=-9%2C2164%2C0.41&t=rfQHkx1IDGJVYehx-1&scaling=min-zoom" target="_blank">
+            <img src="assets/work/17.png" alt="Project" />
+            </a>
+          </div>
+          <div class="filter-project-item" data-project="des">
+            <a href="https://www.figma.com/proto/QrYWpQaTKUbSfXUoO4Lycn/expander_2?page-id=0%3A1&node-id=18-280&viewport=-2843%2C260%2C0.45&t=4jQCUHPeoDQafNiB-1&scaling=min-zoom" target="_blank">
+            <img src="assets/work/18.png" alt="Project" />
+            </a>
+          </div>
+          <div class="filter-project-item" data-project="des">
+            <a href="https://www.figma.com/proto/RFJKLXo30nVHO78sq4N0jf/expander_5?page-id=0%3A1&node-id=33-2&viewport=-748%2C227%2C0.36&t=nZNueXcPfDTjBf7A-1&scaling=min-zoom" target="_blank">
+            <img src="assets/work/19.png" alt="Project" />
+            </a>
+          </div>
+          <div class="filter-project-item" data-project="des">
+            <a href="https://www.figma.com/proto/MkHM80nVfUzXNeeWflqK2C/Expander_3?page-id=0%3A1&node-id=108-155&viewport=1363%2C727%2C0.21&t=XQ4Q6uGWADUPXIsM-1&scaling=min-zoom" target="_blank">
+            <img src="assets/work/20.png" alt="Project" />
+            </a>
+          </div>
+          <div class="filter-project-item" data-project="des">
+            <a href="https://www.figma.com/proto/zIFO2EH1iwh0DTyO4mi0Ss/expander_4?page-id=0%3A1&node-id=251-92&viewport=-1551%2C352%2C0.28&t=lXn2JPx0vxVshvM7-1&scaling=min-zoom" target="_blank">
+            <img src="assets/work/21.png" alt="Project" />
+            </a>
+          </div>
+        </div>
+      </div>
+<!-- start of end section -->
+<hr style="border-color: #1E3A4A; border-width: 0.05rem; border-style: solid; width: 100%;">
+<footer>
+  <div class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <svg width="287" height="76" viewBox="0 0 287 76" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M33.9621 73.4582L0.988281 39.7042L33.9621 5.9502L5.14114 39.7042L33.9621 73.4582Z" fill="#FFFBF0"/>
+          <path d="M73.5085 39.6055L42.6144 75.7902L11.7305 39.6055L42.6144 68.6966L73.5085 39.6055Z" fill="#FFFBF0"/>
+          <path d="M82.5442 39.6532L49.7588 73.4587L78.7481 39.8076L45.2223 6.60155L42.6074 51.2477C42.6074 51.2477 42.6646 7.17521 42.6343 0.342773L82.5442 39.6569V39.6532Z" fill="#FFFBF0"/>
+          <path d="M98.3711 29.3047H100.252L105.597 44.1132L110.961 29.3047H112.842L106.445 46.8197H104.772L98.3745 29.3047H98.3711Z" fill="#FFFBF0"/>
+          <path d="M115.615 29.3047H117.402V46.8197H115.615V29.3047Z" fill="#FFFBF0"/>
+          <path d="M120.636 29.3047H122.423V46.8197H120.636V29.3047ZM123.184 37.9243L130.682 29.3047H132.883L125.381 37.9243L133.361 46.8197H131.16L123.184 37.9243Z" fill="#FFFBF0"/>
+          <path d="M139.075 30.9595H133.94V29.3047H146.001V30.9595H140.866V46.8197H139.079V30.9595H139.075Z" fill="#FFFBF0"/>
+          <path d="M150.689 46.0557C149.427 45.3128 148.38 44.1949 147.67 42.8343C146.947 41.3708 146.57 39.7344 146.57 38.0722C146.57 36.4101 146.947 34.7737 147.67 33.3101C148.38 31.9495 149.42 30.8316 150.676 30.0778C151.998 29.3202 153.469 28.9268 154.963 28.9268C156.457 28.9268 157.928 29.3239 159.251 30.0778C160.506 30.8316 161.546 31.9495 162.256 33.3101C162.979 34.7737 163.356 36.4101 163.356 38.0722C163.356 39.7344 162.979 41.3708 162.256 42.8343C161.546 44.1949 160.499 45.3128 159.237 46.0557C157.914 46.8058 156.451 47.1956 154.96 47.1956C153.469 47.1956 152.005 46.8058 150.682 46.0557H150.686H150.689ZM158.312 44.5406C159.311 43.9486 160.139 43.0587 160.698 41.9702C161.27 40.7714 161.566 39.4402 161.569 38.0906C161.569 36.741 161.276 35.4062 160.711 34.2074C160.159 33.1226 159.341 32.229 158.349 31.6259C157.329 31.0118 156.178 30.6955 155.014 30.7103C153.839 30.6919 152.678 31.0008 151.641 31.6112C150.635 32.2069 149.804 33.1042 149.245 34.1927C148.666 35.3915 148.364 36.7263 148.364 38.0796C148.364 39.4365 148.66 40.7714 149.235 41.9702C149.79 43.055 150.618 43.9449 151.621 44.5406C152.654 45.1327 153.802 45.4415 154.97 45.4415C156.138 45.4415 157.285 45.1327 158.318 44.5406H158.312Z" fill="#FFFBF0"/>
+          <path d="M166.113 29.3053H172.305C173.671 29.1986 175.024 29.6546 176.101 30.5813C176.885 31.5337 177.343 32.7546 177.393 34.0343C177.444 35.314 177.084 36.5753 176.377 37.5976C175.65 38.5133 174.644 39.109 173.544 39.2781L177.35 46.8203H175.492L171.733 39.3774H167.907V46.8203H166.12V29.3053H166.113ZM172.073 37.7263C173.002 37.7851 173.92 37.4836 174.664 36.8732C174.987 36.5606 175.236 36.1745 175.401 35.7406C175.563 35.3066 175.633 34.8359 175.603 34.3689C175.65 33.8798 175.59 33.3908 175.428 32.9311C175.267 32.4751 175.007 32.0633 174.674 31.736C173.91 31.1697 172.995 30.8976 172.073 30.9601H167.9V37.7263H172.073Z" fill="#FFFBF0"/>
+          <path d="M180.169 29.3047H181.96V46.8197H180.169V29.3047Z" fill="#FFFBF0"/>
+          <path d="M191.124 29.3047H192.797L199.194 46.8197H197.36L195.64 42.1348H188.257L186.561 46.8197H184.727L191.124 29.3047ZM195.139 40.48L191.952 31.5626L188.789 40.48H195.139Z" fill="#FFFBF0"/>
+          <path d="M201.64 29.3045H207.395C208.983 29.264 210.562 29.6244 212.005 30.3525C213.271 31.0071 214.328 32.0551 215.044 33.3716C215.778 34.7689 216.145 36.3612 216.111 37.9682C216.111 40.8733 215.33 43.076 213.772 44.569C212.214 46.0619 210.05 46.8121 207.284 46.8121H201.644V29.3008L201.64 29.3045ZM207.624 43.087C208.216 43.1275 208.812 43.0282 209.364 42.7891C209.916 42.5501 210.414 42.1824 210.821 41.708C211.605 40.6563 212.002 39.3251 211.935 37.9755C211.982 36.6848 211.585 35.4198 210.821 34.4306C210.437 33.9636 209.963 33.5959 209.434 33.3569C208.906 33.1178 208.334 33.0075 207.758 33.0406H205.695V43.087H207.62H207.624Z" fill="#FFFBF0"/>
+          <path d="M217.713 29.3047H229.088V33.0372H221.772V36.321H227.116V39.8034H221.772V43.0872H229.088V46.8197H217.713V29.3047Z" fill="#FFFBF0"/>
+          <path d="M230.694 29.3047H234.752V36.5747L240.278 29.3047H245.094L238.602 37.825L245.528 46.816H240.712L234.749 39.079V46.8234H230.69V29.3084L230.694 29.3047Z" fill="#FFFBF0"/>
+          <path d="M248.328 46.8826C247.476 46.7245 246.649 46.434 245.875 46.0184V42.0359C246.692 42.4993 247.557 42.8523 248.452 43.0839C249.29 43.3119 250.149 43.4296 251.01 43.4333C251.596 43.4737 252.181 43.345 252.706 43.0582C252.885 42.9552 253.029 42.7971 253.134 42.6096C253.238 42.422 253.285 42.2014 253.282 41.9808C253.285 41.6424 253.177 41.3188 252.972 41.0651C252.716 40.7672 252.407 40.5245 252.067 40.3517C251.67 40.1347 251.05 39.8369 250.209 39.4508C248.991 38.958 247.887 38.1784 246.975 37.1708C246.366 36.3692 246.013 35.3726 245.972 34.332C245.928 33.2913 246.198 32.2653 246.736 31.4048C247.281 30.5921 248.025 29.9596 248.88 29.5772C249.883 29.1249 250.96 28.9042 252.043 28.9263C252.922 28.9153 253.797 28.9999 254.658 29.1764C255.419 29.3418 256.159 29.6103 256.859 29.978V33.8613C255.614 33.1221 254.217 32.725 252.8 32.7103C252.195 32.6808 251.592 32.8132 251.047 33.1001C250.852 33.1957 250.684 33.3538 250.569 33.5524C250.451 33.7509 250.391 33.9789 250.394 34.2143C250.398 34.457 250.462 34.696 250.579 34.9019C250.697 35.1079 250.862 35.277 251.061 35.391C251.848 35.8691 252.669 36.2772 253.514 36.6192C254.406 36.9906 255.257 37.4724 256.051 38.046C256.61 38.4579 257.064 39.0168 257.371 39.6751C257.667 40.4179 257.808 41.2232 257.781 42.0322C257.811 42.7603 257.68 43.4848 257.398 44.1467C257.115 44.8086 256.694 45.3859 256.162 45.8272C255.086 46.7392 253.477 47.1915 251.337 47.1915C250.327 47.1915 249.321 47.0849 248.331 46.8789L248.328 46.8826Z" fill="#FFFBF0"/>
+          <path d="M259.384 29.3047H263.395L269.288 39.7299V29.3047H273.347V46.8197H269.352L263.436 36.3725V46.8197H259.38V29.3047H259.384Z" fill="#FFFBF0"/>
+          <path d="M275.41 29.3047H286.785V33.0372H279.468V36.321H284.812V39.8034H279.468V43.0872H286.785V46.8197H275.41V29.3047Z" fill="#FFFBF0"/>
+        </svg>
+      </div>
+      <div class="footer-icons">
+
+        <div class="linked-in footer-icon ">
+          <svg width="30" height="33" viewBox="0 0 30 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28.3579 0.509796H1.71191C1.40478 0.510085 1.11009 0.643261 0.892822 0.880209C0.675554 1.11716 0.553264 1.43822 0.552734 1.77346V30.8591C0.553264 31.1944 0.675554 31.516 0.892822 31.7529C1.11009 31.9898 1.40478 32.123 1.71191 32.1233H28.3579C28.5103 32.1243 28.6613 32.0921 28.8022 32.029C28.9432 31.9658 29.0712 31.8731 29.179 31.7556C29.2868 31.638 29.3722 31.4979 29.4302 31.3441C29.4882 31.1903 29.5176 31.0254 29.5168 30.8591V1.77346C29.5178 1.6071 29.4883 1.44234 29.4304 1.28846C29.3725 1.13458 29.2873 0.994599 29.1794 0.877011C29.0716 0.759423 28.9433 0.666695 28.8022 0.603598C28.6612 0.540502 28.5103 0.508637 28.3579 0.509796ZM9.1499 27.4529H4.84473V12.3646H9.1499V27.4529ZM7.00391 10.2951C6.5113 10.2977 6.02943 10.1376 5.62183 9.83567C5.20968 9.53841 4.88867 9.11274 4.70068 8.6141C4.51431 8.11836 4.46416 7.57413 4.55591 7.04771C4.65982 6.52234 4.89665 6.03954 5.23975 5.654C5.59153 5.27717 6.03465 5.01771 6.51685 4.90625C6.99915 4.80667 7.4976 4.86166 7.9519 5.06454C8.40607 5.27184 8.79435 5.62065 9.06836 6.06705C9.34237 6.51345 9.49002 7.03803 9.49292 7.57535C9.48976 8.29472 9.22638 8.98332 8.76025 9.4919C8.29413 10.0005 7.66297 10.2877 7.00391 10.2908V10.2951ZM25.2378 27.4529H20.9458V20.1102C20.9458 18.3572 20.9198 16.1151 18.7078 16.1151C16.4698 16.1151 16.1277 18.0121 16.1277 19.9812V27.454H11.8357V12.3657H15.9568V14.4203H16.0227C16.4365 13.6521 17.0335 13.0207 17.7498 12.5932C18.4661 12.1658 19.2751 11.9582 20.0908 11.9926C24.4348 11.9926 25.2378 15.11 25.2378 19.177V27.4529Z" fill="white"/>
+            </svg>
+        </div>
+        <div class="behance footer-icon">
+          <svg width="39" height="26" viewBox="0 0 39 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.3921 11.5825C16.367 11.1756 17.2003 10.4451 17.7744 9.49375C18.3485 8.54238 18.6345 7.41824 18.592 6.27996C18.592 1.22186 15.116 0 11.092 0H0V25.3778H11.3882C15.6662 25.3778 19.6692 23.1643 19.6692 18.0058C19.7715 16.5547 19.3969 15.1115 18.6128 13.9344C17.8287 12.7574 16.6863 11.9236 15.3901 11.5825H15.3921ZM5.17603 4.3261H10.02C11.89 4.3261 13.562 4.88571 13.562 7.22811C13.562 9.38386 12.262 10.2463 10.415 10.2463H5.17603V4.3261ZM10.6921 21.0666H5.16211V14.081H10.7971C13.0751 14.081 14.51 15.1014 14.51 17.7025C14.51 20.2567 12.8001 21.0613 10.6921 21.0613V21.0666ZM24.937 1.70976H34.4551V4.21044H24.937V1.70976ZM38.1812 16.4538C38.1812 11.0224 35.2451 6.49474 29.9131 6.49474C24.7261 6.49474 21.198 10.7059 21.198 16.2235C21.198 21.9431 24.5421 25.866 29.9131 25.866C33.9681 25.866 36.601 23.9011 37.865 19.6868H33.7441C33.2961 21.2531 31.4801 22.0729 30.0581 22.0729C27.3191 22.0729 25.884 20.3485 25.884 17.4025H38.1541C38.1671 17.1012 38.1812 16.7845 38.1812 16.4538ZM25.8811 14.2116C25.8852 13.6718 25.9904 13.1386 26.1899 12.6447C26.3895 12.1507 26.6793 11.7067 27.0417 11.3394C27.4042 10.9721 27.8316 10.6897 28.2976 10.5091C28.7637 10.3284 29.2587 10.2534 29.7522 10.2889C32.1092 10.2889 33.2802 11.783 33.4912 14.2116H25.8811Z" fill="white"/>
+            </svg>
+        </div>
+        <div class="github footer-icon">
+          <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1175_2358)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5 0C6.48875 0 0 6.48875 0 14.5C0 20.9163 4.15062 26.3356 9.91437 28.2569C10.6394 28.3838 10.9113 27.9487 10.9113 27.5681C10.9113 27.2237 10.8931 26.0819 10.8931 24.8675C7.25 25.5381 6.3075 23.9794 6.0175 23.1637C5.85437 22.7469 5.1475 21.46 4.53125 21.1156C4.02375 20.8438 3.29875 20.1731 4.51312 20.155C5.655 20.1369 6.47062 21.2062 6.7425 21.6412C8.0475 23.8344 10.1319 23.2181 10.9656 22.8375C11.0925 21.895 11.4731 21.2606 11.89 20.8981C8.66375 20.5356 5.2925 19.285 5.2925 13.7387C5.2925 12.1619 5.85437 10.8569 6.77875 9.84188C6.63375 9.47937 6.12625 7.99312 6.92375 5.99937C6.92375 5.99937 8.13813 5.61875 10.9113 7.48563C12.0712 7.15938 13.3038 6.99625 14.5363 6.99625C15.7688 6.99625 17.0013 7.15938 18.1613 7.48563C20.9344 5.60063 22.1488 5.99937 22.1488 5.99937C22.9463 7.99312 22.4388 9.47937 22.2938 9.84188C23.2181 10.8569 23.78 12.1438 23.78 13.7387C23.78 19.3031 20.3906 20.5356 17.1644 20.8981C17.69 21.3512 18.1431 22.2213 18.1431 23.5806C18.1431 25.52 18.125 27.0788 18.125 27.5681C18.125 27.9487 18.3969 28.4019 19.1219 28.2569C24.8494 26.3356 29 20.8981 29 14.5C29 6.48875 22.5112 0 14.5 0Z" fill="white"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_1175_2358">
+            <rect width="29" height="29" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>            
+        </div>
+
+      </div>
+      <div class="copyright">
+        <p>Made by Viktorija Deksne - Copyright2024</p>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
