@@ -104,3 +104,12 @@ body {
 		text-align: center;
 	}
 }
+
+/*  */
+
+poster {
+	width: 200px; /* define the width of the thumbnail */
+	height: 150px; /* define the height of the thumbnail */
+	object-fit: cover; /* ensure the image fills the thumbnail without distortion */
+	border-radius: 5px; /* add rounded corners to the thumbnail */
+} 

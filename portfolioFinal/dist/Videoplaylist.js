@@ -1,3 +1,5 @@
+// Define an array of video objects
+
 const videosList = [
 {
 	video: '/portfolioFinal/dist/assets/images/vid-9.mp4',
@@ -37,7 +39,11 @@ const videosList = [
 },
 ]
 
+
+// Extract unique categories from the videosList array
 const categories = [...new Set(videosList.map((item) => { return item }))]
+
+// Render the videosList on the webpage
 document.getElementById('videosList').innerHTML = categories.map((item) => {
 	var { video, title } = item;
 	return (
@@ -48,14 +54,20 @@ document.getElementById('videosList').innerHTML = categories.map((item) => {
 		)
 }).join('')
 
+// Get all the video list elements and remove the 'active' class from each
 let videoList = document.querySelectorAll('.video-list-container .list');
 videoList.forEach(remove => { remove.classList.remove('active') });
+// Add click event listeners to each video list element
 videoList.forEach(vid => {
 	vid.onclick = () => {
+		// Remove 'active' class from all video list elements
 		videoList.forEach(remove => { remove.classList.remove('active') });
+		// Add 'active' class to the clicked video list element
 		vid.classList.add('active');
+		// Get the source and title of the clicked video
 		let src = vid.querySelector('.list-video').src;
 		let title = vid.querySelector('.list-title').innerHTML;
+		// Update the main video player with the clicked video
 		document.querySelector('.main-video-container .main-video').src = src;
 		document.querySelector('.main-video-container .main-video').play();
 		document.querySelector('.main-video-container .main-vid-title').innerHTML = title;
